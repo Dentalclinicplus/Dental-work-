@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios Dentales</title>
+    <title>Servicios Dentales - Dental Clinic Plus</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             background-color: #f8f9fa;
             margin: 0;
             padding: 0;
@@ -17,7 +17,7 @@
             overflow: hidden;
         }
         .header {
-            background: #007bff;
+            background: linear-gradient(90deg, #007bff, #00c6ff);
             color: #fff;
             padding: 20px 0;
             text-align: center;
@@ -25,7 +25,8 @@
         }
         .header h1 {
             margin: 0;
-            font-size: 2em;
+            font-size: 2.5em;
+            letter-spacing: 1px;
         }
         .services {
             display: flex;
@@ -58,13 +59,13 @@
         .service h2 {
             margin: 10px 0;
             color: #007bff;
-            font-size: 1.2em;
+            font-size: 1.5em;
         }
         .service p {
             color: #555;
             margin: 5px 0;
             word-wrap: break-word;
-            font-size: 1em;
+            font-size: 1.1em;
         }
         .service:hover {
             transform: translateY(-10px);
@@ -73,22 +74,23 @@
         .tooltip {
             display: none;
             position: absolute;
-            top: -100px;
+            top: -130px;
             left: 50%;
             transform: translateX(-50%);
-            background-color: #007bff;
+            background-color: rgba(0, 0, 0, 0.8);
             color: #fff;
             text-align: center;
-            border-radius: 5px;
-            padding: 10px;
-            font-size: 0.9em;
-            width: 90%;
+            border-radius: 10px;
+            padding: 15px;
+            font-size: 1em;
+            width: 100%;
+            max-width: 250px;
             z-index: 1;
-            opacity: 0.9;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            pointer-events: none;
         }
         .footer {
-            background: #007bff;
+            background: linear-gradient(90deg, #007bff, #00c6ff);
             color: #fff;
             text-align: center;
             padding: 20px 0;
@@ -109,6 +111,8 @@
     </style>
     <!-- Link to Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link to Google Fonts for custom fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             var services = document.querySelectorAll('.service');
